@@ -1,2 +1,35 @@
 
 https://insper.github.io/Embarcados-Avancados/Tutorial-FPGA-RTL/
+
+  PROCESS (state)
+   BEGIN
+		if (en = '1') then
+			if (dir = '0') then
+				CASE state IS
+				  WHEN s0 =>
+					 phases <= "0001";
+				  WHEN s1 =>
+					 phases <= "0010";
+				  WHEN s2 =>
+					 phases <= "0100";
+				  when s3 =>
+					 phases <= "1000";
+				  when others =>
+					 phases <= "0000";
+				END CASE;
+			elsif (dir = '1') then
+				CASE state IS
+				  WHEN s0 =>
+					 phases <= "1000";
+				  WHEN s1 =>
+					 phases <= "0100";
+				  WHEN s2 =>
+					 phases <= "0010";
+				  when s3 =>
+					 phases <= "0001";
+				  when others =>
+					 phases <= "0000";
+				END CASE;
+			end if;
+		end if;
+   END PROCESS;
