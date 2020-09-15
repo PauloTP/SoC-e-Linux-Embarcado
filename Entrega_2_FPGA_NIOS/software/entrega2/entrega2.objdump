@@ -933,7 +933,7 @@ alt_after_alt_main:
 int dir =0;
 int vel = 0;
 
-int sleep[] ={100000,35000,70000,10000};
+int sleep[] ={100000,70000,35000,10000};
 
 void delay(int n){
    2026c:	defffd04 	addi	sp,sp,-12
@@ -949,7 +949,7 @@ void delay(int n){
    20288:	10800044 	addi	r2,r2,1
    2028c:	e0bffe15 	stw	r2,-8(fp)
 
-int sleep[] ={100000,35000,70000,10000};
+int sleep[] ={100000,70000,35000,10000};
 
 void delay(int n){
       unsigned int delay = 0 ;

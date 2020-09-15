@@ -11,7 +11,7 @@ int en =0;
 int dir =0;
 int vel = 0;
 
-int sleep[] ={100000,35000,70000,10000};
+int sleep[] ={100000,70000,35000,10000};
 
 void delay(int n){
       unsigned int delay = 0 ;
