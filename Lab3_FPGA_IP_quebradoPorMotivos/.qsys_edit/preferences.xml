@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="143" />
+   <irq preferredWidth="34" />
+   <export preferredWidth="381" />
+   <inputclock preferredWidth="131" />
+   <description preferredWidth="135" />
+   <name preferredWidth="223" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Library,Project" />
+ <window width="1657" height="941" x="67" y="54" />
+ <hdlexample language="VHDL" />
+ <generation simulation="VHDL" block_symbol_file="1" />
+</preferences>
