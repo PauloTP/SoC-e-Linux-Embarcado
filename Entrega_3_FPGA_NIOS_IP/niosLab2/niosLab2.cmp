@@ -1,0 +1,9 @@
+	component niosLab2 is
+		port (
+			clk_clk       : in  std_logic                    := 'X'; -- clk
+			fases_phases  : out std_logic_vector(3 downto 0);        -- phases
+			leds_name     : out std_logic_vector(3 downto 0);        -- name
+			reset_reset_n : in  std_logic                    := 'X'  -- reset_n
+		);
+	end component niosLab2;
+
