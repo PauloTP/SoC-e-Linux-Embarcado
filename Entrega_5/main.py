@@ -11,7 +11,7 @@ host = "/tmp/9Lq7BNBnBycd6nxy.socket"
 
 sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 sock.connect((host))
-n = 0
+n = "0"
 
 def thread_get():
         global n
