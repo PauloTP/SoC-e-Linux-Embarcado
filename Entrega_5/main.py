@@ -3,6 +3,7 @@
 import socket
 from flask import Flask,render_template,request
 import threading
+import struct
 
 app = Flask(__name__)
 
@@ -10,24 +11,25 @@ host = "/tmp/9Lq7BNBnBycd6nxy.socket"
 
 sock = socket.socket(socket.AF_UNIX, socket.SOCK_STREAM)
 sock.connect((host))
+n = 0
 
 def thread_get():
+        global n
         while True:
-                received = str(sock.recv(1024), "utf-8")
-                print(received)
+                n = str(sock.recv(1024))
+                print(n)
 
-def thread_post():
-        sock.sendall(bytes('ola!' + "\n", "utf-8"))
-
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET','POST'])
 def hello():
 
         if request.method == "POST":
-                post = threading.Thread(target=thread_post)
-                post.start()
+                global n
+                print("sending: ",n)
+                sock.sendall(bytes(str(n), "utf-8"))
 
-        get = threading.Thread(target=thread_get)
-        get.start()
+        if request.method == "GET":
+                get = threading.Thread(target=thread_get)
+                get.start()
 
         return render_template('main.html')
         

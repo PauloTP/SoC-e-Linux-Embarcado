@@ -33,13 +33,14 @@ int main(int argc, char *argv[]) {
     listen(sock, 20);
     connfd = accept(sock, (struct sockaddr*)NULL, NULL);
 
+    int n = 0;
     while(1) {
         // write
-        snprintf(sendBuff, sizeof(sendBuff), "oi!! \r\n");
+        snprintf(sendBuff, sizeof(sendBuff), n);
         write(connfd, sendBuff, strlen(sendBuff));
 
         // read and print
-        int n = 0;
+        
         if ((n = read(connfd, recvBuff, sizeof(recvBuff)-1)) > 0) {
             recvBuff[n] = 0;
             fputs(recvBuff, stdout);
