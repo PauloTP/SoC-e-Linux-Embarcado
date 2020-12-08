@@ -102,7 +102,7 @@ begin
         enable  <= '0';
       else
         counter := 0;
-		  if (en = '1') and (max_step <= 517) then
+		  if (en = '1') and (max_step <= 500) then 
 				enable  <= '1';
 				max_step := max_step+1;
 			elsif (en = '0') then

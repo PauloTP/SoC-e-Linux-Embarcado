@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Aug 31 20:13:25 2020
+Fitter Status : Successful - Tue Dec  8 19:31:03 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 Revision Name : Entrega_1
 Top-level Entity Name : toplevel
 Family : Cyclone V
 Device : 5CSXFC6D6F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 58 / 41,910 ( < 1 % )
+Logic utilization (in ALMs) : 57 / 41,910 ( < 1 % )
 Total registers : 63
 Total pins : 9 / 499 ( 2 % )
 Total virtual pins : 0

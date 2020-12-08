@@ -22,6 +22,7 @@ $(TARGET): main.o
 
 deploy : $(TARGET)
 	$(SCP)
+	scp main.py $(LOCATION):/home/root
 
 run : deploy
 	$(SSH)

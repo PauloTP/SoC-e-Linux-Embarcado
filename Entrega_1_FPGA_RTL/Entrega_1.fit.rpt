@@ -1,5 +1,5 @@
 Fitter report for Entrega_1
-Mon Aug 31 20:13:25 2020
+Tue Dec  8 19:31:03 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
 
 
@@ -63,14 +63,14 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                    ;
 +---------------------------------+-------------------------------------------------+
-; Fitter Status                   ; Successful - Mon Aug 31 20:13:25 2020           ;
+; Fitter Status                   ; Successful - Tue Dec  8 19:31:03 2020           ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
 ; Revision Name                   ; Entrega_1                                       ;
 ; Top-level Entity Name           ; toplevel                                        ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSXFC6D6F31C6                                  ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 58 / 41,910 ( < 1 % )                           ;
+; Logic utilization (in ALMs)     ; 57 / 41,910 ( < 1 % )                           ;
 ; Total registers                 ; 63                                              ;
 ; Total pins                      ; 9 / 499 ( 2 % )                                 ;
 ; Total virtual pins              ; 0                                               ;
@@ -158,9 +158,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.4%      ;
-;     Processor 3            ;   0.3%      ;
-;     Processor 4            ;   0.3%      ;
+;     Processor 2            ;   0.2%      ;
+;     Processor 3            ;   0.2%      ;
+;     Processor 4            ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -189,8 +189,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 180 ) ; 0.00 % ( 0 / 180 )         ; 0.00 % ( 0 / 180 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 180 ) ; 0.00 % ( 0 / 180 )         ; 0.00 % ( 0 / 180 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 181 ) ; 0.00 % ( 0 / 181 )         ; 0.00 % ( 0 / 181 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 181 ) ; 0.00 % ( 0 / 181 )         ; 0.00 % ( 0 / 181 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -213,7 +213,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 180 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 181 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 0 )      ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -229,14 +229,14 @@ The pin-out file can be found in /home/labarqcomp/Downloads/github/SoC-e-Linux-E
 +-------------------------------------------------------------+--------------------+-------+
 ; Resource                                                    ; Usage              ; %     ;
 +-------------------------------------------------------------+--------------------+-------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 58 / 41,910        ; < 1 % ;
-; ALMs needed [=A-B+C]                                        ; 58                 ;       ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 57 / 41,910        ; < 1 % ;
+; ALMs needed [=A-B+C]                                        ; 57                 ;       ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 58 / 41,910        ; < 1 % ;
 ;         [a] ALMs used for LUT logic and registers           ; 32                 ;       ;
 ;         [b] ALMs used for LUT logic                         ; 26                 ;       ;
 ;         [c] ALMs used for registers                         ; 0                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 41,910         ; 0 %   ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 41,910         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41,910         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -249,11 +249,11 @@ The pin-out file can be found in /home/labarqcomp/Downloads/github/SoC-e-Linux-E
 ;     -- Logic LABs                                           ; 10                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
-; Combinational ALUT usage for logic                          ; 98                 ;       ;
+; Combinational ALUT usage for logic                          ; 99                 ;       ;
 ;     -- 7 input functions                                    ; 0                  ;       ;
-;     -- 6 input functions                                    ; 14                 ;       ;
-;     -- 5 input functions                                    ; 5                  ;       ;
-;     -- 4 input functions                                    ; 5                  ;       ;
+;     -- 6 input functions                                    ; 12                 ;       ;
+;     -- 5 input functions                                    ; 6                  ;       ;
+;     -- 4 input functions                                    ; 7                  ;       ;
 ;     -- <=3 input functions                                  ; 74                 ;       ;
 ; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
 ;                                                             ;                    ;       ;
@@ -325,11 +325,11 @@ The pin-out file can be found in /home/labarqcomp/Downloads/github/SoC-e-Linux-E
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.0% / 0.0% / 0.0% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 0.3% / 0.4% / 0.3% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 0.4% / 0.4% / 0.4% ;       ;
 ; Maximum fan-out                                             ; 63                 ;       ;
 ; Highest non-global fan-out                                  ; 34                 ;       ;
-; Total fan-out                                               ; 514                ;       ;
-; Average fan-out                                             ; 2.86               ;       ;
+; Total fan-out                                               ; 515                ;       ;
+; Average fan-out                                             ; 2.85               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -338,14 +338,14 @@ The pin-out file can be found in /home/labarqcomp/Downloads/github/SoC-e-Linux-E
 +-------------------------------------------------------------+----------------------+--------------------------------+
 ; Statistic                                                   ; Top                  ; hard_block:auto_generated_inst ;
 +-------------------------------------------------------------+----------------------+--------------------------------+
-; Logic utilization (ALMs needed / total ALMs on device)      ; 58 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
-; ALMs needed [=A-B+C]                                        ; 58                   ; 0                              ;
+; Logic utilization (ALMs needed / total ALMs on device)      ; 57 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
+; ALMs needed [=A-B+C]                                        ; 57                   ; 0                              ;
 ;     [A] ALMs used in final placement [=a+b+c+d]             ; 58 / 41910 ( < 1 % ) ; 0 / 41910 ( 0 % )              ;
 ;         [a] ALMs used for LUT logic and registers           ; 32                   ; 0                              ;
 ;         [b] ALMs used for LUT logic                         ; 26                   ; 0                              ;
 ;         [c] ALMs used for registers                         ; 0                    ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                    ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 0 / 41910 ( 0 % )    ; 0 / 41910 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 41910 ( < 1 % )  ; 0 / 41910 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 41910 ( 0 % )    ; 0 / 41910 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                    ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                    ; 0                              ;
@@ -358,11 +358,11 @@ The pin-out file can be found in /home/labarqcomp/Downloads/github/SoC-e-Linux-E
 ;     -- Logic LABs                                           ; 10                   ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
-; Combinational ALUT usage for logic                          ; 98                   ; 0                              ;
+; Combinational ALUT usage for logic                          ; 99                   ; 0                              ;
 ;     -- 7 input functions                                    ; 0                    ; 0                              ;
-;     -- 6 input functions                                    ; 14                   ; 0                              ;
-;     -- 5 input functions                                    ; 5                    ; 0                              ;
-;     -- 4 input functions                                    ; 5                    ; 0                              ;
+;     -- 6 input functions                                    ; 12                   ; 0                              ;
+;     -- 5 input functions                                    ; 6                    ; 0                              ;
+;     -- 4 input functions                                    ; 7                    ; 0                              ;
 ;     -- <=3 input functions                                  ; 74                   ; 0                              ;
 ; Combinational ALUT usage for route-throughs                 ; 0                    ; 0                              ;
 ; Memory ALUT usage                                           ; 0                    ; 0                              ;
@@ -392,7 +392,7 @@ The pin-out file can be found in /home/labarqcomp/Downloads/github/SoC-e-Linux-E
 ;     -- Registered Output Connections                        ; 0                    ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; Internal Connections                                        ;                      ;                                ;
-;     -- Total Connections                                    ; 514                  ; 0                              ;
+;     -- Total Connections                                    ; 515                  ; 0                              ;
 ;     -- Registered Connections                               ; 176                  ; 0                              ;
 ;                                                             ;                      ;                                ;
 ; External Connections                                        ;                      ;                                ;
@@ -1395,8 +1395,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name    ; Entity Name ; Library Name ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------+-------------+--------------+
-; |toplevel                  ; 57.5 (0.5)           ; 57.5 (0.5)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 98 (1)              ; 63 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 9    ; 0            ; |toplevel              ; toplevel    ; work         ;
-;    |stepmotor:u1|          ; 57.0 (57.0)          ; 57.0 (57.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 97 (97)             ; 63 (63)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |toplevel|stepmotor:u1 ; stepmotor   ; work         ;
+; |toplevel                  ; 56.5 (0.5)           ; 57.0 (0.5)                       ; 0.5 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 99 (1)              ; 63 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 9    ; 0            ; |toplevel              ; toplevel    ; work         ;
+;    |stepmotor:u1|          ; 56.0 (56.0)          ; 56.5 (56.5)                      ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 98 (98)             ; 63 (63)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |toplevel|stepmotor:u1 ; stepmotor   ; work         ;
 +----------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1412,7 +1412,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; stepmotor_pio[3] ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; stepmotor_dir    ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; fpga_clk_50      ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
-; stepmotor_en     ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; stepmotor_en     ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; stepmotor_vel[1] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; stepmotor_vel[0] ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +------------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
@@ -1430,8 +1430,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - stepmotor:u1|Selector4~0   ; 0                 ; 0       ;
 ; fpga_clk_50                       ;                   ;         ;
 ; stepmotor_en                      ;                   ;         ;
-;      - stepmotor:u1|process_2~6   ; 0                 ; 0       ;
-;      - stepmotor:u1|max_step[0]~0 ; 0                 ; 0       ;
+;      - stepmotor:u1|process_2~5   ; 1                 ; 0       ;
+;      - stepmotor:u1|max_step[0]~0 ; 1                 ; 0       ;
 ; stepmotor_vel[1]                  ;                   ;         ;
 ;      - stepmotor:u1|LessThan0~7   ; 1                 ; 0       ;
 ;      - stepmotor:u1|LessThan0~11  ; 1                 ; 0       ;
@@ -1450,9 +1450,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                       ; Location             ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +----------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; fpga_clk_50                ; PIN_Y26              ; 63      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; stepmotor:u1|LessThan0~18  ; MLABCELL_X82_Y24_N54 ; 26      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
-; stepmotor:u1|max_step[0]~0 ; LABCELL_X83_Y22_N36  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; stepmotor:u1|process_2~6   ; LABCELL_X83_Y22_N54  ; 34      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; stepmotor:u1|LessThan0~18  ; MLABCELL_X84_Y24_N12 ; 26      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; stepmotor:u1|max_step[0]~0 ; LABCELL_X83_Y24_N36  ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; stepmotor:u1|process_2~5   ; LABCELL_X83_Y24_N54  ; 34      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
 +----------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1470,14 +1470,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------+------------------------+
 ; Routing Resource Type                       ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Block interconnects                         ; 86 / 289,320 ( < 1 % ) ;
+; Block interconnects                         ; 90 / 289,320 ( < 1 % ) ;
 ; C12 interconnects                           ; 2 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 23 / 119,108 ( < 1 % ) ;
-; C4 interconnects                            ; 8 / 56,300 ( < 1 % )   ;
+; C2 interconnects                            ; 21 / 119,108 ( < 1 % ) ;
+; C4 interconnects                            ; 13 / 56,300 ( < 1 % )  ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )         ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )         ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )         ;
-; Direct links                                ; 15 / 289,320 ( < 1 % ) ;
+; Direct links                                ; 32 / 289,320 ( < 1 % ) ;
 ; Global clocks                               ; 1 / 16 ( 6 % )         ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )          ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )          ;
@@ -1533,12 +1533,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )          ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )         ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )         ;
-; Local interconnects                         ; 74 / 84,580 ( < 1 % )  ;
+; Local interconnects                         ; 70 / 84,580 ( < 1 % )  ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )         ;
-; R14 interconnects                           ; 10 / 12,676 ( < 1 % )  ;
+; R14 interconnects                           ; 12 / 12,676 ( < 1 % )  ;
 ; R14/C12 interconnect drivers                ; 11 / 20,720 ( < 1 % )  ;
-; R3 interconnects                            ; 43 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 31 / 266,960 ( < 1 % ) ;
+; R3 interconnects                            ; 37 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 27 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 2 / 360 ( < 1 % )      ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )     ;
 +---------------------------------------------+------------------------+
@@ -1674,43 +1674,43 @@ This will disable optimization of problematic paths and expose them for further 
 +---------------------------+-----------------------+-------------------+
 ; Source Register           ; Destination Register  ; Delay Added in ns ;
 +---------------------------+-----------------------+-------------------+
-; stepmotor_en              ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[30] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[29] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[28] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[26] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[25] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[24] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[23] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[22] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[21] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[20] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[19] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[18] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[17] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[16] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[15] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[14] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[13] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[12] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[27] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[10] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[9]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[8]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[7]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[6]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[5]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[4]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[3]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[2]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[1]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[0]  ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[11] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|max_step[31] ; stepmotor:u1|enable   ; 0.303             ;
-; stepmotor:u1|state.s0     ; stepmotor:u1|state.s1 ; 0.287             ;
-; stepmotor:u1|state.s3     ; stepmotor:u1|state.s0 ; 0.285             ;
-; stepmotor:u1|state.s2     ; stepmotor:u1|state.s3 ; 0.272             ;
-; stepmotor:u1|state.s1     ; stepmotor:u1|state.s2 ; 0.167             ;
+; stepmotor:u1|state.s3     ; stepmotor:u1|state.s0 ; 0.300             ;
+; stepmotor:u1|state.s0     ; stepmotor:u1|state.s1 ; 0.294             ;
+; stepmotor_en              ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[29] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[28] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[27] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[26] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[25] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[24] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[23] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[22] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[21] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[20] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[19] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[18] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[17] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[16] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[15] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[14] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[13] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[12] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[11] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[10] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[9]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[8]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[7]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[6]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[5]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[4]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[3]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[2]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[1]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[0]  ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[30] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|max_step[31] ; stepmotor:u1|enable   ; 0.289             ;
+; stepmotor:u1|state.s2     ; stepmotor:u1|state.s3 ; 0.277             ;
+; stepmotor:u1|state.s1     ; stepmotor:u1|state.s2 ; 0.151             ;
 +---------------------------+-----------------------+-------------------+
 Note: This table only shows the top 37 path(s) that have the largest delay added for hold.
 
@@ -1762,14 +1762,14 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:05
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:25
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file /home/labarqcomp/Downloads/github/SoC-e-Linux-Embarcado/Entrega_1_FPGA_RTL/Entrega_1.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 2428 megabytes
-    Info: Processing ended: Mon Aug 31 20:13:26 2020
-    Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:00:55
+    Info: Peak virtual memory: 2420 megabytes
+    Info: Processing ended: Tue Dec  8 19:31:04 2020
+    Info: Elapsed time: 00:01:29
+    Info: Total CPU time (on all processors): 00:00:57
 
 
 +----------------------------+
